@@ -1,11 +1,11 @@
 # Test report
 
-Automated syntax, reference, metadata, compatibility, size and packaging checks passed. The local Chrome executable exited without producing headless screenshots or DOM dumps, so interactive desktop status remains **PENDING**. No physical-TV claims are made.
+Automated syntax, reference, metadata, compatibility, size and packaging checks passed. The Home screen rendered successfully in headless Chrome at 1280×720 and was visually inspected. Subsequent multi-state captures were inconsistent—some were taken before styles/scripts settled—and are not counted as passed. A reliable 1920×1080 capture and keyboard-driven screen suite remain pending. No physical-TV claims are made.
 
 | Feature | Implemented | Desktop-tested | TV-tested | Unsupported / notes |
 |---|---:|---:|---:|---|
-| Fixed-stage scaling | Yes | Static verified; visual pending | Pending | — |
-| Home rails and focus | Yes | Code/static verified | Pending | — |
+| Fixed-stage scaling | Yes | 1280×720 Home render passed; 1920 pending | Pending | — |
+| Home rails and focus | Yes | Home render passed; keyboard pending | Pending | — |
 | Apps screen | Yes | Code/static verified | Pending | Installed-app discovery restricted |
 | Media recents | Yes | Code/static verified | Pending | — |
 | HTML5 test player | Yes | Not playback-tested | Pending | Codec/device result unknown |
