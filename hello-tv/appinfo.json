@@ -1,0 +1,10 @@
+{
+  "id": "com.pranav.lgtv.hello",
+  "version": "0.0.1",
+  "vendor": "Pranav",
+  "type": "web",
+  "main": "index.html",
+  "title": "Pranav TV Test",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png"
+}
