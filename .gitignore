@@ -1,0 +1,28 @@
+# webOS packages and build output
+*.ipk
+*.zip
+dist/
+build/
+
+# Browser and visual QA artifacts
+/preview-*.png
+/qa-*.png
+/final-*.png
+*.trace
+test-results/
+
+# Local Codex/editor state
+.workstate/
+.vscode/
+.idea/
+
+# Dependencies and logs
+node_modules/
+*.log
+*.tmp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
