@@ -1,0 +1,1 @@
+(function(w){'use strict';function open(){w.Astra.Modal.open('<h2>TV inputs</h2><p>Input switching is not exposed through a verified public API for this third-party webOS 2.0 app. Press the <strong>INPUT</strong> button on the LG remote. Astra will keep your place.</p>');}w.Astra.Inputs={open:open};}(window));

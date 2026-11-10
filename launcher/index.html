@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Astra Home</title>
+<link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/glass.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/motion.css">
+</head><body class="theme-crimson motion-full quality-max">
+<div id="viewport"><div id="stage">
+  <div class="background"><i class="ambient-crimson"></i><i class="ambient-violet"></i><i class="vignette"></i></div>
+  <header class="header">
+    <div class="clock-block"><div id="greeting" class="greeting">Good evening</div><div class="clock-line"><span id="clock" class="clock">08:24</span><span id="period" class="period">PM</span></div><div id="date" class="date">Tuesday, 10 November</div></div>
+    <div class="header-controls" data-zone="header">
+      <button class="glass-thin focusable" data-action="open:inputs"><span class="control-icon">▰</span>Inputs</button>
+      <button class="glass-thin focusable" data-action="open:network"><span id="network-dot" class="status-dot checking"></span><span id="network-label">Checking</span></button>
+      <button class="glass-thin round focusable" data-action="open:settings" aria-label="Settings">⚙</button>
+    </div>
+  </header>
+  <nav class="glass-thin nav" data-zone="nav"><i id="nav-indicator"></i>
+    <button class="focusable selected" data-action="route:home">Home</button><button class="focusable" data-action="route:apps">Apps</button><button class="focusable" data-action="route:media">Media</button><button class="focusable" data-action="route:settings">Settings</button>
+  </nav>
+  <main id="screen-stack">
+    <section id="screen-home" class="screen active"><div id="home-content" class="home-content">
+      <div class="rail-block"><div class="rail-heading"><h1>Netflix</h1><span>Streaming</span></div><div id="hero-rail" class="rail hero-rail" data-zone="hero"></div></div>
+      <div class="rail-block secondary-block"><div class="rail-heading"><h2>More apps &amp; shortcuts</h2><span>Explore</span></div><div id="shortcut-rail" class="rail shortcut-rail" data-zone="shortcuts"></div></div>
+    </div></section>
+    <section id="screen-apps" class="screen"><div class="screen-title"><span>Collection</span><h1>Apps</h1><p>Configured apps. IDs can be edited in Settings.</p></div><div id="apps-grid" class="apps-grid" data-zone="apps"></div></section>
+    <section id="screen-media" class="screen"><div class="screen-title"><span>Library</span><h1>Media</h1><p>Recent launcher activity and supported playback tools.</p></div><div id="recent-rail" class="rail recent-rail" data-zone="media-recents"></div><div class="media-actions" data-zone="media-actions"><button class="glass utility focusable" data-action="media:browser"><b>◎</b><strong>Web browser</strong><small>Open LG browser</small></button><button class="glass utility focusable" data-action="media:test"><b>▶</b><strong>Test player</strong><small>Play configured URL</small></button><button class="glass utility focusable" data-action="media:usb"><b>▤</b><strong>USB media</strong><small>Status and limitations</small></button></div><video id="test-player" class="test-player" controls></video></section>
+    <section id="screen-settings" class="screen"><div class="screen-title compact"><span>Astra Home</span><h1>Settings</h1><p>Saved locally on this TV.</p></div><div class="settings-list" data-zone="settings">
+      <button class="glass setting focusable" data-action="setting:theme"><span><strong>Appearance</strong><small>Crimson Night, Midnight Blue, Violet Haze</small></span><em id="setting-theme">Crimson Night</em></button>
+      <button class="glass setting focusable" data-action="setting:clock"><span><strong>Clock</strong><small>12 or 24 hour format</small></span><em id="setting-clock">12 hour</em></button>
+      <button class="glass setting focusable" data-action="setting:motion"><span><strong>Motion</strong><small>Full, reduced, or off</small></span><em id="setting-motion">Full</em></button>
+      <button class="glass setting focusable" data-action="setting:quality"><span><strong>Performance mode</strong><small>Max quality, Auto, or Lite</small></span><em id="setting-quality">Max quality</em></button>
+      <button class="glass setting focusable" data-action="setting:apps"><span><strong>App collection</strong><small>Edit launch IDs and visibility</small></span><em>Edit</em></button>
+      <button class="glass setting focusable" data-action="setting:diagnostics"><span><strong>About &amp; diagnostics</strong><small>Engine, resolution, capabilities, service probe</small></span><em>View</em></button>
+      <button class="glass setting danger focusable" data-action="setting:reset"><span><strong>Reset defaults</strong><small>Restore Astra settings and app registry</small></span><em>Reset</em></button>
+    </div></section>
+  </main>
+  <div id="modal-layer" class="modal-layer" aria-hidden="true"><div class="glass-strong modal"><div id="modal-body"></div><div id="modal-actions" class="modal-actions" data-zone="modal"><button class="glass-thin focusable" data-action="modal:close">Done</button></div></div></div>
+  <div id="toast" class="glass-strong toast"><b id="toast-symbol">i</b><span id="toast-text">Ready</span></div>
+  <div id="fps" class="fps">FPS --</div>
+  <footer><span>Arrows&nbsp; Navigate</span><span>OK&nbsp; Select</span><span>Back&nbsp; Return</span></footer>
+</div></div>
+<script src="webOSTVjs/webOSTV.js"></script><script src="webOSTVjs/webOSTV-dev.js"></script>
+<script src="js/core/util.js"></script><script src="js/core/events.js"></script><script src="js/core/store.js"></script><script src="js/core/platform.js"></script><script src="js/core/toast.js"></script><script src="js/core/router.js"></script><script src="js/core/actions.js"></script><script src="js/core/focus.js"></script>
+<script src="js/ui/clock.js"></script><script src="js/ui/header.js"></script><script src="js/ui/cards.js"></script><script src="js/ui/rails.js"></script>
+<script src="js/screens/home.js"></script><script src="js/screens/apps.js"></script><script src="js/screens/media.js"></script><script src="js/screens/settings.js"></script><script src="js/screens/inputs.js"></script><script src="js/screens/network.js"></script><script src="js/main.js"></script>
+</body></html>

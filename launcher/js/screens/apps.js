@@ -1,0 +1,1 @@
+(function(w){'use strict';function render(){var apps=w.Astra.Store.get('apps');var html='';var i;for(i=0;i<apps.length;i+=1){if(apps[i].visible){html+=w.Astra.Cards.app(apps[i],'apps',false);}}w.Astra.Util.id('apps-grid').innerHTML=html;w.Astra.Cards.bindImages(w.Astra.Util.id('apps-grid'));}w.Astra.Apps={render:render};}(window));

@@ -1,0 +1,12 @@
+{
+  "id": "com.pranav.lgtv.launcher",
+  "version": "0.3.0",
+  "vendor": "Pranav",
+  "type": "web",
+  "main": "index.html",
+  "title": "Astra Home",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "disableBackHistoryAPI": true,
+  "requiredACG": ["application.launcher", "network.query"]
+}
