@@ -21,7 +21,7 @@ Target: LG 43UF770T-TA, firmware 04.06.25, webOS 2.0 generation.
 Desktop QA UA is intentionally not recorded as the television UA. Capture the real value after installation:
 
 ```powershell
-ares-inspect --device OldLGTV --app com.pranav.lgtv.launcher --open
+ares-inspect --device <your-device-name> --app com.pranav.lgtv.launcher --open
 ```
 
 The app logs `Astra UA: ...` during startup. Paste the observed television string here:
