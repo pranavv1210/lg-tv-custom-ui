@@ -1,6 +1,6 @@
 # Test report
 
-Automated syntax, reference, metadata, compatibility, size and packaging checks passed. The Home screen rendered successfully in headless Chrome at 1280×720 and was visually inspected. Subsequent multi-state captures were inconsistent—some were taken before styles/scripts settled—and are not counted as passed. A reliable 1920×1080 capture and keyboard-driven screen suite remain pending. No physical-TV claims are made.
+Automated syntax, reference, metadata, compatibility, size and packaging checks passed. The redesigned Home screen rendered successfully in headless Chrome at both 1920x1080 and 1280x720 and was visually inspected. The fixed stage, complete twelve-app shelf, recommendation rail, hero, and focus state were checked for clipping. A full keyboard-driven multi-screen suite and physical-TV validation remain pending. No physical-TV claims are made.
 
 | Feature | Implemented | Desktop-tested | TV-tested | Unsupported / notes |
 |---|---:|---:|---:|---|

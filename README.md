@@ -6,7 +6,7 @@
 ![webOS 2.0 target](https://img.shields.io/badge/webOS-2.0-8b5cf6)
 ![Vanilla JavaScript](https://img.shields.io/badge/platform-HTML%20%7C%20CSS%20%7C%20ES5-2563eb)
 ![Project status](https://img.shields.io/badge/status-alpha-d97706)
-![Release](https://img.shields.io/badge/release-0.3.0-16a34a)
+![Release](https://img.shields.io/badge/release-0.4.0-16a34a)
 
 ![Astra Home running at 1920×1080](docs/assets/home.jpg)
 
@@ -99,7 +99,7 @@ ares-package launcher/
 ### Install, launch, and debug
 
 ```powershell
-ares-install --device <your-device-name> com.pranav.lgtv.launcher_0.3.0_all.ipk
+ares-install --device <your-device-name> com.pranav.lgtv.launcher_0.4.0_all.ipk
 ares-launch --device <your-device-name> com.pranav.lgtv.launcher
 ares-inspect --device <your-device-name> --app com.pranav.lgtv.launcher --open
 ```
@@ -175,7 +175,7 @@ Read [the design system](docs/DESIGN_SYSTEM.md) and
 
 ## Known limitations
 
-- Physical-TV testing for 0.3.0 is still pending.
+- Physical-TV testing for 0.4.0 is still pending.
 - Input switching and native system-settings launch are not verified public
   third-party capabilities on this television.
 - Installed-app enumeration is likely restricted.

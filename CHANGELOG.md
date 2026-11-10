@@ -7,6 +7,21 @@ All notable changes to this project are documented here. This project follows
 
 - Physical-TV validation, verified streaming app IDs, and performance tuning remain pending.
 
+## [0.4.0] - 2026-11-10
+
+### Added
+
+- Android TV-inspired cinematic home composition with an original recommendation hero.
+- Profile, search, Live, Apps, network, and settings controls in the top navigation.
+- Six-item recommendation rail and a complete twelve-app home shelf.
+- Brand tiles for Disney+, Sony LIV, ZEE5, JioCinema, Spotify, Browser, and Photos.
+
+### Changed
+
+- Replaced the sparse four-card launcher home with a dense, clean streaming layout.
+- Improved 1920x1080 and scaled 1280x720 spacing so app icons remain visible.
+- Bumped the launcher package version to 0.4.0.
+
 ## [0.3.0] - 2026-11-10
 
 ### Added
