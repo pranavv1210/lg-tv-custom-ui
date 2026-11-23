@@ -18,6 +18,7 @@ Automated syntax, reference, metadata, compatibility, size and packaging checks 
 | Inputs panel | Yes | Code/static verified | Pending | Switching unsupported until verified |
 | Application launch | Yes | Failure path not run | Pending | Hello TV ID verified installed via CLI |
 | Back/focus restoration | Yes | Code/static verified | Pending | — |
+| Home double-Back exit | Yes | Node regression tests passed | Pending | First Back only shows the hint; unrelated keys and navigation do not arm the exit |
 | FPS overlay | Yes | Not measured | Pending | Measures browser frame cadence |
 | ES5 syntax | Yes | Passed `node --check` | — | 23,907 bytes application JS |
 | Asset/reference verification | Yes | Passed | — | All referenced files exist |

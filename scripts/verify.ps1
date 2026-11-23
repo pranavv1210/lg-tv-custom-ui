@@ -26,5 +26,7 @@ $jsHits = Get-ChildItem (Join-Path $app 'js') -Filter '*.js' -Recurse | Select-S
 $cssHits = Get-ChildItem (Join-Path $app 'css') -Filter '*.css' -Recurse | Select-String -Pattern $bannedCss
 if ($jsHits) { $jsHits | Format-Table; throw 'Banned JavaScript syntax found' }
 if ($cssHits) { $cssHits | Format-Table; throw 'Banned CSS feature found' }
+node (Join-Path $PSScriptRoot 'test-focus.js')
+if ($LASTEXITCODE -ne 0) { throw 'Focus regression tests failed' }
 Write-Output 'Launcher verification passed.'
 
