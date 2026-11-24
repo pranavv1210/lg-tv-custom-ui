@@ -103,6 +103,12 @@ function createHarness() {
     setRouterBack(value) {
       routerBack = value;
     },
+    openModal() {
+      window.Astra.Focus.openModal();
+    },
+    closeModal() {
+      window.Astra.Focus.closeModal();
+    },
     get platformBackCalls() {
       return platformBackCalls;
     },
@@ -135,6 +141,19 @@ test('navigating back resets the home double-Back window', () => {
   harness.advance(500);
   harness.setRouterBack(true);
   harness.press(461);
+  harness.advance(100);
+  harness.press(461);
+
+  assert.equal(harness.platformBackCalls, 0);
+});
+
+test('opening and closing a modal resets the home double-Back window', () => {
+  const harness = createHarness();
+
+  harness.press(461);
+  harness.advance(500);
+  harness.openModal();
+  harness.closeModal();
   harness.advance(100);
   harness.press(461);
 
